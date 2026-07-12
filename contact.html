@@ -28,7 +28,15 @@
         Tell us about your project and we'll get back to you as soon as possible.
     </p>
 
-    <form class="estimate-form">
+    <form
+    class="estimate-form"
+    action="https://formspree.io/f/xykrgale"
+    method="POST">
+
+    <input
+        type="hidden"
+        name="_subject"
+        value="New Estimate Request - Pleasant View Painting & Drywall">
 
     <label for="name">Name</label>
     <input id="name" name="name" type="text" required>
@@ -51,7 +59,7 @@
     <input id="location" name="location" type="text">
 
     <label for="description">Tell Us About Your Project</label>
-    <textarea id="description" name="project_desctiption" rows="6" required></textarea>
+    <textarea id="description" name="project_description" rows="6" required></textarea>
 
     <button type="submit" class="button">
         Request Estimate
